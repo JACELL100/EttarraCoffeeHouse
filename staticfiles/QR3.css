@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f0f4f8;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .main-container {
+    text-align: center;
+  }
+  
+  .heading {
+    color: #333;
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 0 auto;
+  }
+  
+  .name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .queue-info, .arrival-info, .queue-status, .estimated-time {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    font-weight: 600;
+    color: #5b9bd5;
+  }
+  
+  .queue-no {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .time {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .services {
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .queue-status {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .estimated-time {
+    font-size: 16px;
+  }
+  
+  .estimated-time strong {
+    font-size: 18px;
+    color: #d9534f;
+  }
+  
+  .thank-you-button {
+    background-color: #5b9bd5;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .thank-you-button:hover {
+    background-color: #4a8cb6;
+  }
+  

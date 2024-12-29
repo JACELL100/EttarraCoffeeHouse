@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/1524335/pexels-photo-1524335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.event-create-form {
+    backdrop-filter: blur(10px); /* Semi-transparent background for the form */
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1, h5, h6 ,h3 {
+    color: white;
+    font-weight: 700;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #555; /* Softer text color for the description */
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    width: 100%; /* Full width for input groups */
+}
+
+
+.w-100 {
+    width: 20% !important;
+    margin-left: 17rem;
+}
+
+.event-create-form {
+    width: 70%;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 10rem;
+}
