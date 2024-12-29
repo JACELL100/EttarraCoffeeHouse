@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queue Status</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'QR3.css' %}" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h2 class="heading">Queue Status</h2>
+      <div class="card">
+        <h3 class="name">Shane Dias</h3>
+        <div class="queue-info">
+          <span class="label">Queue No.</span>
+          <span class="queue-no">C3007</span>
+        </div>
+        <div class="arrival-info">
+          <span class="label">Arrived:</span>
+          <span class="time">12-10-2024 12:24 PM</span>
+        </div>
+        <div class="services">
+          <span>Services</span>
+        </div>
+        <div class="queue-status">
+          <span>There are <strong>6</strong> people queuing before you</span>
+        </div>
+        <div class="estimated-time">
+          <span>Your estimated waiting time is</span>
+          <strong>60 min.</strong>
+        </div>
+        <a href="/homepage">
+
+          <button class="thank-you-button">Thank you</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

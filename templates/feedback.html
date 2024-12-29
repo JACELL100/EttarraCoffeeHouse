@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback & Analytics - Ettarra Coffee House</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/feedback.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Customer Feedback & Public Analytics</h1>
+      <p>
+        See what our customers and event managers have to say and review the
+        public insights about our events.
+      </p>
+    </header>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+      <h2>Customer Feedback</h2>
+      <div class="feedback-container">
+        <div class="feedback-card">
+          <p>
+            "The Ettarra Supper Club events are a feast for the senses. The food
+            was fantastic, and the atmosphere was truly immersive!"
+          </p>
+          <h4>- Sarah B.</h4>
+        </div>
+
+        <div class="feedback-card">
+          <p>
+            "Every event I've attended has been top-notch. The themes are unique
+            and the execution is flawless. Highly recommend!"
+          </p>
+          <h4>- John K.</h4>
+        </div>
+
+        <div class="feedback-card">
+          <p>
+            "I love the mix of community, great food, and creativity. Ettarra
+            really knows how to host a memorable event."
+          </p>
+          <h4>- Emily R.</h4>
+        </div>
+      </div>
+      <a href="#feedback">
+        <button class="button2">Drop a Feedback ➡️</button>
+      </a>
+    </section>
+
+    <!-- Event Manager Testimonials Section -->
+    <section class="manager-section">
+      <h2>Event Manager Testimonials</h2>
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <p>
+            "Working with Ettarra has been an amazing experience. Their
+            attention to detail and passion for creating something special sets
+            them apart."
+          </p>
+          <h4>- Chef Alex T.</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            "I've managed many events, but the Ettarra Supper Club stands out
+            for its uniqueness and strong community ties. Every event is a
+            masterpiece."
+          </p>
+          <h4>- Manager Olivia L.</h4>
+        </div>
+      </div>
+      <a href="#feedback">
+        <button class="button2">Drop a Feedback ➡️</button>
+      </a>
+    </section>
+
+    <!-- Public Analytics Section -->
+    <section class="analytics-section">
+      <h2>Public Event Analytics</h2>
+      <div class="analytics-container">
+        <div class="analytics-item">
+          <h3>Total Events Hosted</h3>
+          <p>45</p>
+        </div>
+
+        <div class="analytics-item">
+          <h3>Average Customer Rating</h3>
+          <p>4.8/5</p>
+        </div>
+
+        <div class="analytics-item">
+          <h3>Unique Event Themes</h3>
+          <p>30+</p>
+        </div>
+
+        <div class="analytics-item">
+          <h3>Attendees per Event (Average)</h3>
+          <p>150+</p>
+        </div>
+
+        <div class="analytics-item">
+          <h3>Total Customers Served</h3>
+          <p>6,000+</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback-form-section">
+      <h2  id="feedback">Drop Your Feedback</h2>
+      <p>
+        We value your opinion! Please provide your feedback to help us improve.
+      </p>
+      <form action="#" class="feedback-form" >
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+
+        <label for="role">Your Role</label>
+        <select id="role" name="role" required>
+          <option value="customer">Customer</option>
+          <option value="event-manager">Event Manager</option>
+        </select>
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email address"
+          required
+        />
+
+        <label for="message">Your Feedback</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Write your feedback here..."
+          required
+        ></textarea>
+
+        <button type="submit" class="button2">Submit Feedback ➡️</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 Ettarra Coffee House Supper Club. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'login.css' %}" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!----------------------------- Form box ----------------------------------->
+      <form method="POST">
+        {% csrf_token %}
+      <div class="form-box">
+        <!------------------- login form -------------------------->
+        <div class="login-container" id="login">
+          <div class="top">
+            <header>Sign Up</header>
+          </div>
+
+          <div class="two-forms">
+            <div class="input-box">
+              <input type="text" class="input-field" name="firstname" placeholder="Firstname" />
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+              <input type="text" class="input-field" name='lastname' placeholder="Lastname" />
+              <i class="bx bx-user"></i>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <input type="text" class="input-field" name='email' placeholder="Email" />
+            <i class="bx bxs-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" class="input-field" name="password" placeholder="Password" />
+            <i class="bx bx-lock-alt"></i>
+          </div>
+          <div class="input-box">
+            <input type="submit" class="submit" value="Sign In" />
+          </div>
+          <div class="two-col">
+            <div class="one">
+              <input type="checkbox" id="login-check" />
+              <label for="login-check"> Remember Me</label>
+            </div>
+            <div class="two">
+              <label><a href="#">Terms & conditions</a></label>
+            </div>
+          </div>
+          <div class="bottom">
+            <span
+              >Have an account?
+              <a href="/login" onclick="login()">Login</a></span
+            >
+          </div>
+        </div>
+    </form>
+        <!------------------- registration form -------------------------->
+        <form method="POST">
+            {% csrf_token %}
+          <div class="register-container" id="register">
+            <div class="top">
+              <span
+                >Have an account? <a href="#" onclick="login()">Login</a></span
+              >
+              <header>Sign Up</header>
+            </div>
+            <div class="two-forms">
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="firstname"
+                  class="input-field"
+                  placeholder="Firstname"
+                />
+                <i class="bx bx-user"></i>
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="lastname"
+                  class="input-field"
+                  placeholder="Lastname"
+                />
+                <i class="bx bx-user"></i>
+              </div>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                class="input-field"
+                name="email"
+                placeholder="Email"
+              />
+              <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+              <input
+                type="password"
+                name="password"
+                class="input-field"
+                placeholder="Password"
+              />
+              <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+              <input type="submit" class="submit" value="Register" />
+            </div>
+            <div class="two-col">
+              <div class="one">
+                <input type="checkbox" id="register-check" />
+                <label for="register-check"> Remember Me</label>
+              </div>
+              <div class="two">
+                <label><a href="#">Terms & conditions</a></label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Input Form</title>
+    <link rel="stylesheet" href="{% static 'QR2.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-heading">Waiting....</h1>
+      <form class="input-form" id="inputForm">
+        <input type="text" class="input-field" placeholder="Name" required />
+        <input
+          type="tel"
+          class="input-field"
+          placeholder="Phone Number"
+          required
+        />
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    // The 'next' function with redirection
+    function next(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      const name = document.querySelector('.input-field[type="text"]').value;
+      const phone = document.querySelector('.input-field[type="tel"]').value;
+
+      if (name && phone) {
+        console.log("Name:", name);
+        console.log("Phone:", phone);
+
+        window.location.href = "/QR3index"; 
+      } else {
+        alert("Please fill out all required fields.");
+      }
+    }
+
+    document.getElementById("inputForm").addEventListener("submit", next);
+  </script>
+</html>
